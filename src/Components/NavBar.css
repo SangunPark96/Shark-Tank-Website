@@ -1,0 +1,45 @@
+#logo{ 
+	top:0; 
+	left:0; 
+    
+} 
+
+
+
+nav {
+  background: #027FE2ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 1px 2px 10px #023E7Cff;
+  margin-bottom: 1em;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.contact-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+
+}
+
+.contact-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+.pitch-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.pitch-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+

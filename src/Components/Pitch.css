@@ -1,0 +1,12 @@
+.PitchCell {
+    border: 2px solid rgb(156, 225, 246);
+    padding: 3rem;
+    margin: 2rem auto;
+    background-color: rgb(156, 225, 246);
+    box-shadow: 1px 2px 10px #023E7Cff;
+    max-width: 600px;
+    min-width: 600px;
+}
+.product-link {
+    text-decoration: none;
+}
