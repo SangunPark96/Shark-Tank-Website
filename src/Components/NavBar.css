@@ -43,3 +43,17 @@ nav {
     transform: translateY(-10px)
 } 
 
+.shark-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.shark-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+

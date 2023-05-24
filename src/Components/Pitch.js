@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import './Pitch.css'
 
-export default function Pitch({ pitch, id }) {
+export default function Pitch({ pitch }) {
     return (
         <div className="PitchCell">
             <div>

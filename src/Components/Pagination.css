@@ -1,0 +1,50 @@
+.pagination-station {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.numbers {
+    justify-content: space-evenly;
+    display: flex;
+}
+.pagination-station a {
+    text-decoration: none;
+    color: black;
+}
+
+.lastPage {
+    
+}
+
+.lastlastPage {
+    
+}
+
+.firstPage {
+    border-radius: 5px;
+    
+}
+
+
+.nextPage {
+    color: black;
+}
+
+.nextnextPage {
+    color: black;
+}
+
+
+.currentPage {
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    height: 40px;
+    border-radius: 5px;
+    
+}

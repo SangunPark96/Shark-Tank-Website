@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .App {
-  text-align: center;
+  text-align: center; 
+  font-family: 'Rubik', sans-serif;
+  color: #020C1Cff;
 }
 
 .App-logo {
