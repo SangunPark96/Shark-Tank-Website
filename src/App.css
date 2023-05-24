@@ -39,3 +39,15 @@
     transform: rotate(360deg);
   }
 }
+
+.shark-cell {
+  border: 2px solid blue;
+  margin: 20px;
+  padding: 50px;
+    display: flex;
+
+}
+
+.shark-cell img {
+  object-position: 50% 50%;
+}

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Cuban from '../../Assests/mark-cuban.jpeg'
+import Lori from '../../Assests/lori.png'
 
 
-export default function MarkCuban() {
+export default function LoriGreiner() {
     const [pitches, setPitches] = useState([]);
     let totalInvestments = 0
     let totalMoneySpent = 0
-    let cubanVisits = 0
+    let loriVisits = 0
    
 
     useEffect(() => {
@@ -21,8 +21,8 @@ export default function MarkCuban() {
     for (let i = 0; i < pitches.length; i++){
         if( pitches[i].mark_cuban_investment_amount > 0){
             totalInvestments += 1
-            totalMoneySpent += Number(pitches[i].mark_cuban_investment_amount)
-            cubanVisits += Number(pitches[i].mark_cuban_present)
+            totalMoneySpent += Number(pitches[i].lori_greiner_investment_amount)
+            loriVisits += Number(pitches[i].lori_greiner_present)
         }
     }
 
@@ -30,8 +30,8 @@ console.log(totalMoneySpent)
 
     return(
         <div className="shark-cell">
-            <img alt="cuban" src={Cuban} height={400} width={600}></img>
-            <h1>Mark Cuban</h1>
+            <img alt="lori" src={Lori} height={400} width={600}></img>
+            <h1>Lori Greiner</h1>
             <p>Total Number of Deals Made: <strong>{totalInvestments}</strong></p>
             <p>Total Dollars Invested: 
                 <> {totalMoneySpent.toLocaleString('en-US', {
@@ -40,7 +40,7 @@ console.log(totalMoneySpent)
                                                                 })}
                 </>
             </p>
-            <p>Total Appearances: {cubanVisits}</p>
+            <p>Total Appearances: {loriVisits}</p>
 
         </div>
     )

@@ -1,4 +1,5 @@
 import MarkCuban from "./Investors/MarkCuban"
+import LoriGreiner from "./Investors/LoriGreiner"
 export default function Sharks() {
 
     return(
@@ -9,6 +10,7 @@ export default function Sharks() {
         </main>
         <br/>
         <MarkCuban/>
+        <LoriGreiner/>
         </>
     )
 }
