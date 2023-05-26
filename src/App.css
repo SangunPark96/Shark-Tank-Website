@@ -41,13 +41,16 @@
 }
 
 .shark-cell {
-  border: 2px solid blue;
+  border: 2px solid rgba(0, 0, 255, 0.833);
   margin: 20px;
   padding: 50px;
-    display: flex;
-
+  display: grid;
+  box-shadow: 1px 2px 10px #023E7Cff;
 }
 
 .shark-cell img {
-  object-position: 50% 50%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-end: 1;
 }
+

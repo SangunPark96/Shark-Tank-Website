@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Cuban from '../../Assests/mark-cuban.jpeg'
+import Robert from '../../Assests/robert-herjavec.webp'
 
 
-export default function MarkCuban() {
+export default function RobertHerjavec() {
     const [pitches, setPitches] = useState([]);
     let totalInvestments = 0
     let totalMoneySpent = 0
-    let cubanVisits = 0
-   let arr = []
-   let sum  = 0;
+    let robertVists = 0
+    let arr = []
+    let sum  = 0;
    
 
     useEffect(() => {
@@ -21,32 +21,30 @@ export default function MarkCuban() {
     }, []);
 
     for (let i = 0; i < pitches.length; i++){
-        if( pitches[i].mark_cuban_investment_amount > 0){
+        if( pitches[i].robert_herjavec_investment_amount > 0){
             totalInvestments += 1
-            totalMoneySpent += Number(pitches[i].mark_cuban_investment_amount)
-            arr.push(pitches[i].mark_cuban_investment_amount);
+            totalMoneySpent += Number(pitches[i].robert_herjavec_investment_amount)
+            
+            arr.push(pitches[i].robert_herjavec_investment_amount)
         }
-        if ( pitches[i].mark_cuban_present > 0){
-            cubanVisits += 1
+        if ( pitches[i].robert_herjavec_present > 0){
+            robertVists += 1
         }
-       
     }
-     for (let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++){
         sum += Number(arr[i])
     }
   
     let average = sum / arr.length
-    console.log(average)
-    console.log(cubanVisits)
-    
+   
+    console.log(robertVists)
 
-console.log(totalMoneySpent)
+// console.log(totalMoneySpent)
 
     return(
         <div className="shark-cell">
-            <h1>Mark Cuban</h1>
-            <img alt="cuban" src={Cuban} height={300} width={400}></img>
-            
+            <img alt="robert" src={Robert} height={300} width={500}></img>
+            <h1>Robert Herjavec</h1>
             <p>Total Number of Deals Made: <strong>{totalInvestments}</strong></p>
             <p>Total Dollars Invested: 
                 <> {totalMoneySpent.toLocaleString('en-US', {
@@ -59,7 +57,7 @@ console.log(totalMoneySpent)
                                                                     style: 'currency',
                                                                     currency: 'USD',
                                                                 })}</p>
-            <p>Total Appearances: {cubanVisits}</p>
+            <p>Total Appearances: {robertVists}</p>
 
         </div>
     )

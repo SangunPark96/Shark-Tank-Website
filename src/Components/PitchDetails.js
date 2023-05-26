@@ -1,4 +1,4 @@
-import { Link, useParams, useNavigate } from "react-router-dom"
+import {  useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import axios from "axios";
 import './PitchDetails.css'
@@ -35,9 +35,9 @@ useEffect(() => {
                 </div>
 
                 <div>
-                    <Link to={`/pitches`}>
-                        <button>Back</button>
-                    </Link>
+                    
+                        <button onClick={() => navigate(-1)}>Back</button>
+                    
                 </div>
             </main>
     )
